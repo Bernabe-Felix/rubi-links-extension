@@ -1,0 +1,47 @@
+:root {
+  --bg: #FFF2F0;
+  --rose: #fd48c2;
+  --slate: #7048fd;
+  --gainsboro: #dadada;
+  font-family: system-ui;
+}
+
+.wrapper {
+  display: flex;
+  padding: 0 1rem 1rem;
+  flex-wrap: wrap;
+  min-width: 400px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.title {
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid;
+  border-color: var(--gainsboro);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  column-count: 2
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  width: 100%;
+  display: block;
+  padding: .5rem 0;
+  color: var(--slate);
+  text-decoration: none;
+}
+
+a:hover  {
+  color: var(--rose);
+}

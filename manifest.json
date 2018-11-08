@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Maniak",
+  "description": "Make with ♥️",
+  "version": "1.0",
+
+  "browser_action": {
+   "default_icon": "maniak.jpg",
+   "default_popup": "popup.html"
+  },
+  "permissions": [
+   "activeTab"
+   ]
+}
