@@ -7,47 +7,60 @@
   </head>
   <body>
     <main class="wrapper">
-      <h1>Maniak</h1>
-      <section class="stage-items">
-        <h3 class="title">[ Stage Environments ]</h3>
-        <ul>
-          <li>
-            <a href="http://edensweb.staging.wpengine.com/our-places/">Edens</a>
-          </li>
-          <li>
-            <a href="https://esxnycstaging.wpengine.com/" target="_blank">The Essex </a>
-          </li>
-          <li>
-            <a href="http://moxystage.claresco.com/en" target="_blank">Moxy</a>
-          </li>
-          <li>
-            <a href="http://cachet-stage.sidewaysdigital.com/" target="_blank">Cachet</a>
-          </li>
-          <li>
-            <a href="http://rainbowroom-dev.sidewaysdigital.com/" target="_blank">Rainbowroom</a>
-          </li>
-          <li>
-            <a href="http://theline-stage.sidewaysdigital.com" target="_blank">The Line</a>
-          </li>
-        </ul>
-      </section>
-      <section class="prod-items">
-        <h3 class="title">[ Production Environments ]</h3>
-        <ul>
-          <li>
-            <a href="https://edens.com/" target="_blank">Edens</a>
-          </li>
-          <li>
-            <a href="https://rainbowroom.com/" target="_blank">Rainbowroom</a>
-          </li>
-          <li>
-            <a href="https://freehandhotels.com/" target="_blank">Freehand</a>
-          </li>
-          <li>
-            <a href="https://www.tonal.com" target="_blank">Tonal</a>
-          </li>
-        </ul>
-      </section>
+      <div class="toolbar">
+        <form id="link-form">
+          <input type="text" data-link-name title="name" placeholder="name" required>
+          <input type="url" data-link-href title="href" placeholder="href" required>
+          <input type="text" data-link-label title="label" placeholder="label" required>
+
+          <button type="submit">add</button>
+        </form>
+      </div>
+      <div class="content">
+        <h1>Maniak</h1>
+        <section class="stage-items">
+          <h3 class="title">[ Stage Environments ]</h3>
+          <ul>
+            <li>
+              <a href="http://edensweb.staging.wpengine.com/our-places/">Edens</a>
+            </li>
+            <li>
+              <a href="https://esxnycstaging.wpengine.com/" target="_blank">The Essex </a>
+            </li>
+            <li>
+              <a href="http://moxystage.claresco.com/en" target="_blank">Moxy</a>
+            </li>
+            <li>
+              <a href="http://cachet-stage.sidewaysdigital.com/" target="_blank">Cachet</a>
+            </li>
+            <li>
+              <a href="http://rainbowroom-dev.sidewaysdigital.com/" target="_blank">Rainbowroom</a>
+            </li>
+            <li>
+              <a href="http://theline-stage.sidewaysdigital.com" target="_blank">The Line</a>
+            </li>
+          </ul>
+        </section>
+        <section class="prod-items">
+          <h3 class="title">[ Production Environments ]</h3>
+          <ul>
+            <li>
+              <a href="https://edens.com/" target="_blank">Edens</a>
+            </li>
+            <li>
+              <a href="https://rainbowroom.com/" target="_blank">Rainbowroom</a>
+            </li>
+            <li>
+              <a href="https://freehandhotels.com/" target="_blank">Freehand</a>
+            </li>
+            <li>
+              <a href="https://www.tonal.com" target="_blank">Tonal</a>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
+
+    <script src="app.js"></script>
   </body>
 </html>
