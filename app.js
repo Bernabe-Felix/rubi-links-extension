@@ -10,14 +10,16 @@ const appendLink = ({ name, href, label }) => () => {
     a.target = '_blank';
     a.appendChild(document.createTextNode(name));
 
-    document.querySelector('.stage-items').appendChild(li).appendChild(a);
+    // in the future the idea is to create dynamic workspaces based on label
+    const section = document.querySelector(`.${label}`)
+    if(section)
+        section.appendChild(li).appendChild(a);
 }
 
 const addLink = (store, form) => (e) => {
     const { value: name } = form.querySelector('[data-link-name]')
     const { value: href } = form.querySelector('[data-link-href]')
     const { value: label } = form.querySelector('[data-link-label]')
-
     // prevent reload
     e.preventDefault()
     // clear form

@@ -9,9 +9,15 @@
     <main class="wrapper">
       <div class="toolbar">
         <form id="link-form">
-          <input type="text" data-link-name title="name" placeholder="name" required>
-          <input type="url" data-link-href title="href" placeholder="href" required>
-          <input type="text" data-link-label title="label" placeholder="label" required>
+          <input type="text" data-link-name title="name" placeholder="maniak page" required>
+
+          <input type="url" data-link-href title="href" placeholder="http://maniak.co" required>
+
+          <select data-link-label required title="label">
+            <!-- keep these values in sync with sections class -->
+            <option value="stage-items">Stage</option>
+            <option value="prod-items">Production</option>
+          </select>
 
           <button type="submit">add</button>
         </form>
